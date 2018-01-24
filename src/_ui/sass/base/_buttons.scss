@@ -1,0 +1,28 @@
+/* ==========================================================================
+   BASE/_BUTTONS.SCSS
+   ========================================================================== */
+
+button {
+    background-color: $navy;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: $space $space-triple;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 250ms ease-out;
+    
+    &:hover,
+    &:focus {
+        background-color: $aqua;
+    }
+}
+
+// For when we want to make another element look this way and don't have access to the button element
+// -- Do I need to add font-size 1em for when place inside another element with font-size already?
+.btn { @extends button; }

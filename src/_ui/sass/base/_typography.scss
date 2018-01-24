@@ -1,0 +1,110 @@
+/* ==========================================================================
+   BASE/_TYPOGRAPHY.SCSS
+   ========================================================================== */
+
+body {
+    font-family: $circular;
+    font-size: 62.5%;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    line-height: inherit; 
+    margin-bottom: inherit;
+}
+
+.circ-small {
+    font-family: $circular;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.circ-medium {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.circ-trailing-line {
+    color: $aqua;
+    display: block;
+    font-size: 1.4em;
+    font-family: $circular;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1em;
+    margin-bottom: $space;
+    text-transform: uppercase;
+
+    &::after {
+        border-top: 1px solid $aqua;
+        content: '';
+        display: inline-block;
+        height: 5px;
+        margin-left: $space; 
+        width: 75px;
+    }
+}
+
+.aqua .circ-trailing-line { 
+    color: $navy; 
+    
+    &::after { border-color: $navy; }
+}
+
+.pt-medium {
+    display: block;
+    font-family: $pt-serif;
+	font-size: 2em;
+    line-height: 1em;
+    margin-bottom: $space;
+}
+
+.pt-large {
+    display: block;
+	font-family: $pt-serif;
+	font-size: 4em;
+    font-weight: normal;
+    line-height: 1em;
+    margin-bottom: $space;
+}
+
+.pt-xl {
+    display: block;
+	font-family: $pt-serif;
+	font-size: 5em;
+    line-height: 1em;
+    margin-bottom: $space;
+}
+
+// Paragraphs
+p {
+    font-size: 1.4em;
+    font-family: $book;
+    margin-bottom: $space;
+}
+
+// Blockquote
+blockquote {
+    font-style: italic;
+    padding-left: $space;
+    margin-bottom: $space;
+}
+
+// Others
+abbr {
+    border-bottom: 1px dotted $black;
+    cursor: help;
+}
+
+
+@media screen and (min-width: $bp-large) {
+    p { font-size: 1.6em; }
+
+    .circ-medium { font-size: 2.8em; }
+    .pt-medium { font-size: 3.6em; }
+    .pt-large { font-size: 6em; }
+    .pt-xl { font-size: 7.2em; }
+}

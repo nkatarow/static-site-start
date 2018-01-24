@@ -1,0 +1,34 @@
+{
+  "name": "physio-control",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Custom static website for Physio-Control.",
+  "contributors": [
+    {
+      "name": "Nick Katarow (http://nkatarow.net)"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/turnstylestudio/static-site"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-iconfont": "^9.0.2",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-ruby-sass": "^2.0.5",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "merge-stream": "^1.0.0"
+  }
+}

@@ -1,0 +1,5 @@
+{% extends "src/templates/chrome/base.nunjucks" %}
+
+{% block content %}
+	<h1>Homepage</h1>
+{% endblock %}

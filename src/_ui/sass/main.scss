@@ -1,0 +1,30 @@
+/* ==========================================================================
+   MAIN.SCSS
+   ========================================================================== */
+
+/**
+ *
+ * MAIN.CSS & MAIN.MIN.CSS are compiled using the imports from this file.
+ *
+ * To add new styles and components, import them in the appropriate sections below.
+ *
+ */
+
+// Helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/reset";
+
+
+// Base
+@import "base/buttons";
+@import "base/fonts";
+@import "base/layout";
+@import "base/lists";
+@import "base/typography";
+@import "base/utility";
+
+// Components
+@import "components/mobile-navigation";
+@import "components/desktop-navigation";
+@import "components/footer";

@@ -1,0 +1,22 @@
+{% extends "src/templates/chrome/base.nunjucks" %}
+
+{% set page_title = "Template Development Table of Contents" %}
+
+{% block content %}
+	<h1>Symetra Template Development | Table of Contents</h1>
+	
+	<h2>Globals</h2>
+	<ul>
+		<li><a href="/style-guide">Style Guide</a></li>
+	</ul>
+	
+	<h2>Full Pages (Views)</h2>
+	<ul>
+		<li><a href="/homepage" class="">Homepage</a></li>
+	</ul>
+	
+	<h2>Components</h2>
+	<ul>
+		<li><a href="/style-guide#module-name">Module Name</a></li>
+	</ul>
+{% endblock %}

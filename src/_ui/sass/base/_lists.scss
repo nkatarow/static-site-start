@@ -1,0 +1,32 @@
+/* ==========================================================================
+   BASE/_LISTS.SCSS
+   ========================================================================== */
+
+
+// Basic Lists
+ol, ul {
+    font-size: 1.4em;
+}
+
+ol { margin-left: 1.5em; }
+ul { list-style: none; }
+
+
+// Definition Lists
+dl {
+    overflow: hidden;
+    margin: 0 0 $space;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+}
+
+@media screen and (min-width: $bp-large) {
+    // Basic Lists
+    ol, ul { font-size: 1.6em; }    
+}

@@ -1,0 +1,138 @@
+{% extends "src/templates/chrome/base.nunjucks" %}
+
+{% set page_title = "Style Guide" %}
+
+{% block content %}
+	<link rel="stylesheet" href="style-guide.css">
+	
+ 	<section class="container margin-top">
+		<h2 class="pt-medium aqua">Color Palette</h2>
+		
+		<div id="atoms-brand-colors" class="sg-pattern">
+        	<h3 class="circ-medium navy">Brand Colors</h3>
+	      	<div class="sg-pattern-example">
+	        	<ul class="sg-colors">
+					<li>
+						<span class="sg-swatch" style="background: #143250;"></span>
+						<span class="sg-label">
+							$navy <br>
+							#143250
+						</span>
+					</li>
+					<li>
+						<span class="sg-swatch" style="background: #1dc2bb;"></span>
+						<span class="sg-label">
+							$aqua <br>
+							#1dc2bb
+						</span>
+					</li>
+				</ul>
+			</div>
+	    </div>
+
+		<div id="atoms-neutral-colors" class="sg-pattern">
+        	<h3 class="circ-medium navy">Neutral Colors</h3>
+
+	      	<div class="sg-pattern-example">
+	        	<ul class="sg-colors">
+					<li>
+						<span class="sg-swatch" style="background: #fff;"></span>
+						<span class="sg-label">
+							$white <br>
+							#fff
+						</span>
+					</li>
+					<li>
+						<span class="sg-swatch" style="background: #e6e6e6;"></span>
+						<span class="sg-label">
+							$light-gray <br>
+							#e6e6e6
+						</span>
+					</li>
+					<li>
+						<span class="sg-swatch" style="background: #c2c2c2;"></span>
+						<span class="sg-label">
+							$gray <br>
+							#c2c2c2
+						</span>
+					</li>
+					<li>
+						<span class="sg-swatch" style="background: #69747c;"></span>
+						<span class="sg-label">
+							$dark-gray <br>
+							#69747c
+						</span>
+					</li>
+					<li>
+						<span class="sg-swatch" style="background: #000;"></span>
+						<span class="sg-label">
+							$black <br>
+							#000
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+				
+		<div id="atoms-neutral-colors" class="sg-pattern">
+        	<h3 class="circ-medium navy">Utility Colors</h3>
+
+	      	<div class="sg-pattern-example">
+	        	<ul class="sg-colors">
+					<li>
+						<span class="sg-swatch" style="background: #fced1e;"></span>
+						<span class="sg-label">
+							$yellow <br>
+							#fced1e
+						</span>
+					</li>
+				</ul>
+			</div>
+	    </div>
+	</section>	
+		
+	<section id="atoms-fonts" class="sg-pattern container margin-top">
+    	<h2 class="pt-medium aqua">Fonts</h2>
+
+      	<div class="sg-pattern-example">
+        	<p>Circular Medium<br />
+			<span style="font-style: italic;">Circular Medium Italic</span></p>
+			
+			<p style="font-weight: 500;">Circular Bold (500)<br />
+			<span style="font-weight: 500; font-style: italic;">Circular Bold Italic (500)</span></p>
+			
+			<p style="font-weight: 700;">Circular Black (700)<br />
+			<span style="font-weight: 700; font-style: italic;">Circular Black Italic (700)</span></p>
+			
+        	<p style="font-family: 'Circular-Book';">Circular Book<br />
+			<span style="font-family: 'Circular-Book'; font-style: italic;">Circular Book Italic</span></p>
+
+        	<p style="font-family: 'PT Serif';">PT Serif</p>
+      	</div>
+    </section>
+
+	<section id="atoms-headers" class="sg-pattern container margin-top">
+    	<div class="sg-pattern-head">
+        	<h2 class="pt-medium aqua">Headers</h2>
+        	<div class="sg-pattern-breadcrumb"></div>
+      	</div>
+      	<div class="sg-pattern-extra" id="sg-pattern-extra-atoms-fonts"></div>
+      	<div class="sg-pattern-example">
+			<p class="circ-medium">Circ Medium Header Style</p>
+			<p class="pt-medium">PT Medium Header Style</p>
+			<p class="pt-large">PT Large Header Style</p>
+			<p class="pt-xl">PT XL Header Style</p>
+      	</div>
+    </section>
+	
+	<section id="atoms-buttons" class="sg-pattern container margin-top">
+    	<h2 class="pt-medium aqua">Buttons</h2>
+
+      	<div class="sg-pattern-example">
+            <p><a href="#" class="arrow-after">Arrow After</a></p>
+        	<button class="">Button</button>
+        </div>
+	</section>
+				
+	{% include "src/templates/components/test-component.nunjucks" %}		
+{% endblock %}

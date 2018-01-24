@@ -1,0 +1,15 @@
+/* ==========================================================================
+   BASE/_FONTS.SCSS
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+ 
+@font-face {
+    font-family: "Circular";
+    src:url("_ui/fonts/lineto-circular-medium.eot");
+    src:url("_ui/fonts/lineto-circular-medium.eot?#iefix") format("embedded-opentype"),
+        url("_ui/fonts/lineto-circular-medium.woff2") format("woff2"),
+        url("_ui/fonts/lineto-circular-medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
